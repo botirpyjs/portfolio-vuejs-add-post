@@ -1,0 +1,112 @@
+<template>
+    <div>
+        <!-- <h1>
+            <p>
+                Count: <strong>{{ count }}</strong>
+            </p>
+            <button class="btn btn-success" v-on:click="increment">Increment</button>
+            <button class="btn btn-primary" v-on:click="decrement">Decrement</button>
+        </h1> -->
+        <!-- <div class="comment">
+            <div><b>Name:</b> Botir</div>
+        </div> -->
+
+        <header>
+            <div class="logo">
+                <span class="lg">LogoMak</span>
+            </div>
+            <div class="menu">
+                <span class="menu1">Home</span>
+                <span class="menu1">About</span>
+                <span class="menu1">Info</span>
+                <span class="menu1">Contact</span>
+                <span class="menu1">Login</span>
+            </div>
+        </header>
+
+        <div class="bg">
+            <h3 class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quibusdam voluptates esse iusto natus? Porro ab est pariatur! Incidunt repudiandae labore libero? Velit officia, sapiente libero quas nemo aperiam tempore maxime minima soluta ex voluptatem quam natus nisi in eligendi? Animi quam rem mollitia sit. Eaque nam omnis vel laudantium?</h3>
+            <!-- <br> -->
+            <div class="btnn">
+                <button class="btn btn-dark m-1">Registry</button>
+                <button class="btn btn-secondary m-1">Login</button>
+            </div>
+        </div>
+        
+    </div>
+</template>
+<script>
+export default {
+    data() {
+        return {
+            // count: 0,
+        }
+    },
+        methods: {
+            increment(){
+                this.count += 1
+            },
+            decrement(){
+                this.count -= 1
+            }
+        },
+}
+</script>
+<style>
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu{
+    color: white;
+    font-size: 20px;
+    margin-left: 500px;
+    border-left: coral 1px solid;
+    border-right: coral 1px solid;
+}
+.logo{
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+}
+.menu1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.menu1:hover{
+    transition: .5s all ease;
+    color: coral;
+}
+
+.bg{
+    background-image: url('main.jpg');
+    height: 30rem;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    /* filter: opacity(10); */
+    flex-direction: column;
+    padding-top: 130px;
+    border-bottom: 3px solid #444;
+}
+.lorem{
+    font-style: italic;
+    font-size: 25px;
+    font-family: monospace;
+    padding: 10px;
+    background-color: #30303080;
+}
+</style>
