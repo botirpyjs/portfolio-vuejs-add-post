@@ -2,7 +2,7 @@
     <div>
         <div class="w-75 mx-auto">
             <h1 class="text-center text-secondary">Yangi post qo'shing!</h1>
-            <h4><center>Faqat emailni nomini yozing undan keyingi @gmail.com kerak emas.</center></h4>
+            
             <form @submit.prevent>
                 <my-input v-model="comment.name" placeholder="Ismingiz..." class="ss form-control" />
                 <my-input v-model="comment.email" placeholder="Emailingiz..." class="ss form-control my-2" />
