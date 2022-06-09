@@ -5,7 +5,7 @@
             
             <form @submit.prevent>
                 <my-input v-model="comment.name" placeholder="Ismingiz..." class="ss form-control" />
-                <my-input v-model="comment.email" placeholder="Emailingiz..." class="ss form-control my-2" />
+                <my-input v-model="comment.email" placeholder="Emailingiz..." class="ss form-control my-2" required />
                 <my-input v-model="comment.content" placeholder="Postingiz..." class="ss form-control" />
                 <div class="btn1 d-flex flex-row-reverse ">
                     <my-btn @click="createComment" class="btn btn-danger mt-3 w-25" >Qo'shish</my-btn>
