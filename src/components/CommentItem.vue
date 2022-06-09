@@ -2,7 +2,7 @@
     <div class="comment">
         <div>    
             <div><b>Ism: </b>{{ comment.name }}</div>
-            <div><b>Email: </b>{{ comment.email }}@gmail.com</div>
+            <div><b>Email: </b>{{ comment.email }}</div>
             <div><b>Post: </b> <i>"{{ comment.content }}"</i> </div>
         </div>
         <div>
